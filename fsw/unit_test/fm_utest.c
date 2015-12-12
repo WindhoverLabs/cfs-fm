@@ -275,7 +275,7 @@ int main(void)
     FM_AppMain();
     UTF_CFE_ES_Use_Default_Api_Return_Code(CFE_ES_RUNLOOP_PROC);
 
-    return 0;
+    return UT_TotalFailCount;
 
 } /* End of main() */
 

@@ -21,10 +21,6 @@ include_directories(${PSP_INC_DIRS})
 # Build application
 add_library(${APP_FILE} SHARED ${APP_SRC} ${APP_CUSTOM_SRC})
 
-# Build tables
-add_library(fm_freespace STATIC ${TABLE_DIR}/fm_freespace.c)
-set_target_properties(fm_freespace PROPERTIES PREFIX "" SUFFIX ".tbl")
-
 add_subdirectory(../unit_test unit_test)
 
 # Generate documentation
