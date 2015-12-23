@@ -1188,7 +1188,7 @@ void FM_ChildDirListFileCmd(FM_ChildQueueEntry_t *CmdArgs)
 {
     char     *CmdText = "Directory List to File";
     boolean   Result;
-    int32     FileHandle;
+    int32     FileHandle = 0;
     os_dirp_t DirPtr = 0;
 
     /* Report current child task activity */
