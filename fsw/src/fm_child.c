@@ -1,7 +1,7 @@
 /*
 ** $Id: fm_child.c 1.24.1.3 2015/02/28 18:10:55EST sstrege Exp  $
 **
-**  Copyright © 2007-2014 United States Government as represented by the 
+**  Copyright ï¿½ 2007-2014 United States Government as represented by the 
 **  Administrator of the National Aeronautics and Space Administration. 
 **  All Other Rights Reserved.  
 **
@@ -1189,7 +1189,7 @@ void FM_ChildDirListFileCmd(FM_ChildQueueEntry_t *CmdArgs)
     char     *CmdText = "Directory List to File";
     boolean   Result;
     int32     FileHandle;
-    os_dirp_t DirPtr;
+    os_dirp_t DirPtr = 0;
 
     /* Report current child task activity */
     FM_GlobalData.ChildCurrentCC = CmdArgs->CommandCode;
