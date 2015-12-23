@@ -1473,13 +1473,12 @@ void FM_ChildDirListFileLoop(os_dirp_t DirPtr, int32 FileHandle,
     boolean  CommandResult = TRUE;
     uint32   DirEntries = 0;
     uint32   FileEntries = 0;
-    int32    EntryLength;
-    int32    PathLength;
-    int32    BytesWritten;
-    char     TempName[OS_MAX_PATH_LEN];
-    os_dirent_t *DirEntry;
-    FM_DirListEntry_t  DirListData;
-
+    int32    EntryLength = 0;
+    int32    PathLength = 0;
+    int32    BytesWritten = 0;
+    char     TempName[OS_MAX_PATH_LEN] = "";
+    os_dirent_t *DirEntry = 0;
+    FM_DirListEntry_t  DirListData = {};
 
     PathLength = strlen(DirWithSep);
 
